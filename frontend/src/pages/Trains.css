@@ -1,0 +1,201 @@
+.trains-page {
+  padding: 2rem;
+}
+
+.trains-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.trains-header h1 {
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin: 0;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header-buttons button {
+  padding: 0.625rem 1rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.header-buttons button:hover {
+  background: #357abd;
+}
+
+.trains-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .trains-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.trains-list, .cameras-panel {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trains-list h2, .cameras-panel h2 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.train-card {
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.train-card:hover {
+  background: #f8f9fa;
+}
+
+.train-card.selected {
+  border-color: #4a90e2;
+  background: #e3f2fd;
+}
+
+.train-card h3 {
+  margin: 0;
+  color: #1a1a2e;
+}
+
+.train-card p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.train-card .date {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.cameras-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.camera-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.camera-icon {
+  font-size: 1.5rem;
+}
+
+.camera-info h4 {
+  margin: 0;
+  color: #1a1a2e;
+}
+
+.camera-info p {
+  margin: 0.25rem 0 0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.modal h2 {
+  margin-top: 0;
+  color: #1a1a2e;
+}
+
+.modal input, .modal select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.modal-buttons button {
+  padding: 0.625rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-buttons button:first-child {
+  background: #eee;
+  color: #333;
+}
+
+.modal-buttons button:last-child {
+  background: #4a90e2;
+  color: white;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+}
+
+.loading, .error {
+  padding: 2rem;
+  text-align: center;
+}
+
+.error {
+  color: #c33;
+}

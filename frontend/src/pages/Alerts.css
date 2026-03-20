@@ -1,0 +1,152 @@
+.alerts-page {
+  padding: 2rem;
+}
+
+.alerts-page h1 {
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  padding: 0.625rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.filters button {
+  padding: 0.625rem 1.5rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filters button:hover {
+  background: #357abd;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.alert-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #f57c00;
+}
+
+.alert-card.resolved {
+  border-left-color: #2e7d32;
+  opacity: 0.8;
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.alert-type {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.severity-high {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.severity-medium {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.severity-low {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status.pending {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.status.resolved {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.alert-message {
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.alert-meta {
+  display: flex;
+  gap: 1.5rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.resolve-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.resolve-btn:hover {
+  background: #1b5e20;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+}
+
+.loading, .error {
+  padding: 2rem;
+  text-align: center;
+}
+
+.error {
+  color: #c33;
+}
